@@ -238,3 +238,4 @@ function sayHi() {
     console.log('hello' + arguments[0] + ',' + arguments[1]);
     console.log(arguments.length); // 查看传递多少个参数
 }
+// 没有重载
