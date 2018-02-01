@@ -107,7 +107,24 @@ var sum = values.reduce(function (prev, cur, index, array) {
 console.log(sum);
 
 // Date类型
-
-
-
+var date = new Date();
+Date.parse('May 25, 2004') // 接收一个表示日期的字符串参数，然后尝试根据这个字符串返回相应日期的毫秒数
+Date.UTC(year, month) // 接收年月 
+Date.now() // 返回表示调用这个方法时的日期和时间的毫秒数
+// 继承的方法
+tiLocaleString()
+toString()
+valueOf()
+// 以上三个并没有什么软用
+// 日期格式化方法
+toDateString() // 以特定于实现的格式化显示星期几、月、日和年；
+toTimeString() // 以特定于实现的格式显示时、分、秒和时区；
+toLocaleDateString() // 以特定于实现的格式显示时、分、秒和时区；
+toLocaleTimeString() // 以特定于实现的格式显示时、分、秒；
+toUTCString() // 以特定于实现的格式显示完整的UTC日期。
+// 日期/时间组件方法 UTC日期指的是没有时区偏差的情况下（暂不归纳）
+getTime() // 返回表示日期的毫秒数；与valueOf()方法返回的值相同
+setTime() // 以毫秒设置日期，会改变整个日期
+getFullYear() // 取得4位数的年份
+setFullYear() // 设置日期的年份，传入的年分值必须是4位数字
 
